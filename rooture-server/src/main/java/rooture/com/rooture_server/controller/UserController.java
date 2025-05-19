@@ -1,7 +1,7 @@
-package com.rooture.controller;
+package rooture.com.rooture_server.controller;
 
-import com.rooture.model.User;
-import com.rooture.service.UserService;
+import rooture.com.rooture_server.model.UserModel;
+import rooture.com.rooture_server.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
