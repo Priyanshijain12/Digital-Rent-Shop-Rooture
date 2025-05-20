@@ -1,3 +1,4 @@
+package rooture.com.rooture_server.controller;
 
 import com.rooture.model.RentalListing;
 import com.rooture.service.RentalService;

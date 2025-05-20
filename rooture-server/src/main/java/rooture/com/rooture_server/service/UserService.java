@@ -1,17 +1,7 @@
-package com.rooture.service;
+package rooture.com.rooture_server.service;
 
-import com.rooture.dao.UserDAO;
-import com.rooture.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import rooture.com.rooture_server.model.UserModel;
 
-@Service
-public class UserService {
-
-    @Autowired
-    private UserDAO userDAO;
-
-    public void registerUser(User user) {
-        userDAO.saveUser(user);
-    }
+public interface UserService {
+void registerUser(UserModel user);
 }
