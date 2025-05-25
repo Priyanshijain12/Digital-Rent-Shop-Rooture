@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ListingCard, { Listing } from "../components/ListingCard";
 
 const ListingsPage: React.FC = () => {

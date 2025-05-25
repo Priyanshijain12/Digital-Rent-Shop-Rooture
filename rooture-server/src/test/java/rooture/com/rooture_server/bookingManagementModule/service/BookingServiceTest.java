@@ -1,4 +1,4 @@
-package rooture.com.rooture_server.bookingManagementModule;
+package rooture.com.rooture_server.bookingManagementModule.service;
 
 @ExtendWith(MockitoExtension.class)
 public class BookingServiceTest {

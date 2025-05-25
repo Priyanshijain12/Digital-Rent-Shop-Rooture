@@ -68,12 +68,15 @@ public class RentalServiceTest {
 }
 
 // --- CONTROLLER TEST ---
-package com.rooture.controller;
+package rooture.com.rooture_server.rentalManagementModule.controller;
 
         import com.fasterxml.jackson.databind.ObjectMapper;
         import com.rooture.model.RentalListing;
         import com.rooture.service.RentalService;
-        import org.junit.jupiter.api.Test;
+
+import rooture.com.rooture_server.controller.RentalController;
+
+import org.junit.jupiter.api.Test;
         import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
         import org.springframework.boot.test.mock.mockito.MockBean;
