@@ -1,4 +1,4 @@
-package rooture.com.rooture_server.userManagementModule.model;
+package rooture.com.rooture_server.userManagementModule.dto;
 
 @Getters
 @Session
