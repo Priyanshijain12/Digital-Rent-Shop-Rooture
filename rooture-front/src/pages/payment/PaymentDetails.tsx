@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getPaymentDetails } from '../../service/payment/api';
+import { getPaymentDetails } from '../../api/paymentApi';
 
 export const PaymentDetails = () => {
   const [bookingId, setBookingId] = useState('');

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { processPayment } from '../../service/payment/api';
+import { processPayment } from '../../api/paymentApi';
 
 export const PaymentForm = () => {
   const [amount, setAmount] = useState('');

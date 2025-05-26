@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { processRefund } from '../../service/payment/api';
+import { processRefund } from '../../api/paymentApi';
+
 
 export const RefundButton = () => {
   const [bookingId, setBookingId] = useState('');
