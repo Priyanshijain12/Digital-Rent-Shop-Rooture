@@ -1,4 +1,4 @@
-package rooture.com.searchAndFilterModule.service;
+package rooture.com.rooture_server.searchAndFilterModule.service;
 
 @ExtendWith(MockitoExtension.class)
 public class ListingServiceTest {
