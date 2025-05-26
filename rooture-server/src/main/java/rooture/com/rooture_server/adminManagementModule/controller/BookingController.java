@@ -1,4 +1,4 @@
-package rooture.com.rooture_server.adminManagementModule.controller;
+package rooture.com.rooture_server.admiManagementModule.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
