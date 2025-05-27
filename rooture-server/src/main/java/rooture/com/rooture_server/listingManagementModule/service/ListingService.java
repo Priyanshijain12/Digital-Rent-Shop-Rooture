@@ -1,8 +1,8 @@
-package com.rooture.rentals.service;
+package rooture.com.rooture_server.listingManagementModule.service;
 
 import java.util.List;
 
-import com.rooture.rentals.model.Listing;
+import rooture.com.rooture_server.listingManagementModule.model.Listing;
 
 public interface ListingService {
     void createListing(Listing listing);

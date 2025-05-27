@@ -1,7 +1,8 @@
 package rooture.com.rooture_server.userManagementModule.dto;
 
-@Getters
-@Session
+import lombok.Getter;
+
+@Getter
 
 public class RoleDTO { public String username, role; }
 

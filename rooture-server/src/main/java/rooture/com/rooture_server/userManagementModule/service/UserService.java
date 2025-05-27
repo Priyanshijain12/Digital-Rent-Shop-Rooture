@@ -1,5 +1,13 @@
 package rooture.com.rooture_server.userManagementModule.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import rooture.com.rooture_server.userManagementModule.dao.UserRepository;
+import rooture.com.rooture_server.userManagementModule.dto.LoginDTO;
+import rooture.com.rooture_server.userManagementModule.dto.RoleDTO;
+import rooture.com.rooture_server.userManagementModule.dto.UserDTO;
+
 @Service
 public class UserService {
     @Autowired

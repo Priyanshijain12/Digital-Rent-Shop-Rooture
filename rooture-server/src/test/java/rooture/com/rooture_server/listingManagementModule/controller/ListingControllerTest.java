@@ -1,4 +1,4 @@
-package com.rooture.rentals.controller;
+package rooture.com.rooture_server.listingManagementModule.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;

@@ -1,4 +1,4 @@
-package rooture.com.rooture_server.listingManagementModule.controller;
+package rooture.com.rooture_server.controller;
 
 import java.util.List;
 
@@ -11,17 +11,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import rooture.com.rooture_server.listingManagementModule.model.Listing;
-import rooture.com.rooture_server.listingManagementModule.service.ListingService;
+import rooture.com.rooture_server.model.Listing;
+import rooture.com.rooture_server.service.ListingService;
 
 @RestController
 @RequestMapping("/api/listings")
 public class ListingController {
 
     @Autowired
-    private ListingService listingService; 
+    private ListingService listingService;
 
     @PostMapping
     public ResponseEntity<String> createListing(@RequestBody Listing listing) {
@@ -39,7 +40,7 @@ public class ListingController {
 
     @PutMapping("/{id}")
     public ResponseEntity<String> updateListing(@PathVariable Long id, @RequestBody Listing listing) {
-        if (listing.getTitle() == null) {
+        if (listing ==null) {
             return ResponseEntity.badRequest().body("Invalid data");
         }
         listingService.updateListing(id, listing);
@@ -51,4 +52,21 @@ public class ListingController {
         listingService.deleteListing(id);
         return ResponseEntity.ok("Listing deleted successfully");
     }
-}
+
+    @GetMapping("/search")
+    public ResponseEntity<List<Listing>> searchListings(
+            @RequestParam String location,
+            @RequestParam String type,
+            @RequestParam double price) {
+        return ResponseEntity.ok(listingService.searchListings(location, type, price));
+    }
+
+    @GetMapping("/filter")
+    public ResponseEntity<List<Listing>> filterListings(
+            @RequestParam String type,
+            @RequestParam double minPrice,
+            @RequestParam double maxPrice,
+            @RequestParam boolean available) {
+        return ResponseEntity.ok(listingService.filterListings(type, minPrice, maxPrice, available));
+    }
+} 

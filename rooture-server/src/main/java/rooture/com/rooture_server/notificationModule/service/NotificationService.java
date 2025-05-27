@@ -1,5 +1,14 @@
 package rooture.com.rooture_server.notificationModule.service;
 
+import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Service;
+
+import rooture.com.rooture_server.notificationModule.dao.NotificationRepository;
+import rooture.com.rooture_server.notificationModule.model.EmailRequest;
+import rooture.com.rooture_server.notificationModule.model.NotificationLog;
+import rooture.com.rooture_server.notificationModule.model.SmsRequest;
+
 @Service
 public class NotificationService {
 

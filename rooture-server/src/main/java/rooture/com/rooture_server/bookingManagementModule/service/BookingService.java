@@ -1,5 +1,10 @@
 package rooture.com.rooture_server.bookingManagementModule.service;
 
+import org.springframework.stereotype.Service;
+
+import rooture.com.rooture_server.bookingManagementModule.dao.BookingRepository;
+import rooture.com.rooture_server.bookingManagementModule.model.Booking;
+
 @Service
 public class BookingService {
     private final BookingRepository bookingRepository;

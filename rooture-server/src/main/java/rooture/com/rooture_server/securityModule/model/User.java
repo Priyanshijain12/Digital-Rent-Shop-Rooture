@@ -1,7 +1,10 @@
 package rooture.com.rooture_server.securityModule.model;
 
-@Getters
-@setters
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class User {
     private Long id;
     private String username;

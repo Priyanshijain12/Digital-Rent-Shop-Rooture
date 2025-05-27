@@ -1,5 +1,13 @@
 package rooture.com.rooture_server.searchAndFilterModule.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import rooture.com.rooture_server.searchAndFilterModule.dao.ListingRepository;
+import rooture.com.rooture_server.searchAndFilterModule.model.Listing;
+
 @Service
 public class ListingServiceImpl implements ListingService {
 

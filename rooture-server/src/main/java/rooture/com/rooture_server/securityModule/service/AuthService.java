@@ -1,5 +1,12 @@
 package rooture.com.rooture_server.securityModule.service;
 
+import org.springframework.stereotype.Service;
+
+import rooture.com.rooture_server.securityModule.dao.UserDao;
+import rooture.com.rooture_server.securityModule.model.LoginRequest;
+import rooture.com.rooture_server.securityModule.model.LoginResponse;
+import rooture.com.rooture_server.securityModule.model.User;
+
 @Service
 public class AuthService {
 

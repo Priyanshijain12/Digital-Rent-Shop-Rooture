@@ -1,5 +1,10 @@
 package rooture.com.rooture_server.paymentManagementModule.dao;
 
+import org.springframework.stereotype.Repository;
+
+import rooture.com.rooture_server.paymentManagementModule.model.PaymentDetails;
+import rooture.com.rooture_server.paymentManagementModule.model.PaymentRequest;
+
 @Repository
 public class PaymentDao {
 

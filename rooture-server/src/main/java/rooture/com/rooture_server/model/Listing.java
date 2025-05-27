@@ -1,17 +1,22 @@
-package rooture.com.rooture_server.listingManagementModule.model;
+package rooture.com.rooture_server.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter
+@Table(name = "listings")
+@Data
 @Setter
+@RequiredArgsConstructor
+@Getter
 public class Listing {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,6 +24,8 @@ public class Listing {
     private String title;
     private String description;
     private String type;
+    private String location;
     private double price;
     private boolean available;
-}
+    private String owner;
+} 

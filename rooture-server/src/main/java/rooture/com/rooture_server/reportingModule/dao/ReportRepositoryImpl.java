@@ -1,10 +1,11 @@
 package rooture.com.rooture_server.reportingModule.dao;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Repository;
-import rooture.com.rooture_server.reportingModule.dto.ReportDTO;
-
 import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import lombok.RequiredArgsConstructor;
+import rooture.com.rooture_server.reportingModule.dto.ReportDTO;
 
 @Repository
 @RequiredArgsConstructor
@@ -18,24 +19,24 @@ public class ReportRepositoryImpl implements ReportRepository {
     @Override
     public List<ReportDTO> fetchUserReports() {
         long totalUsers = userRepository.count();
-        return List.of(new ReportDTO("Total Users", String.valueOf(totalUsers)));
+        return null;
     }
 
     @Override
     public List<ReportDTO> fetchListingReports() {
         long totalListings = listingRepository.count();
-        return List.of(new ReportDTO("Total Listings", String.valueOf(totalListings)));
+        return null;
     }
 
     @Override
     public List<ReportDTO> fetchBookingReports() {
         long totalBookings = bookingRepository.count();
-        return List.of(new ReportDTO("Total Bookings", String.valueOf(totalBookings)));
+        return null;
     }
 
     @Override
     public List<ReportDTO> fetchPaymentReports() {
         double totalPayments = paymentRepository.findAll().stream().mapToDouble(p -> p.getAmount()).sum();
-        return List.of(new ReportDTO("Total Payments", "$" + totalPayments));
+        return null;
     }
 }

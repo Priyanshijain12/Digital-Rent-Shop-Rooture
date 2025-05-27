@@ -1,5 +1,9 @@
 package rooture.com.rooture_server.securityModule.dao;
 
+import org.springframework.stereotype.Service;
+
+import rooture.com.rooture_server.securityModule.model.User;
+
 @Service
 public class UserDaoImpl implements UserDao {
     @Override
