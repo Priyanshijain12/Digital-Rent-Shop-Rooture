@@ -10,4 +10,12 @@ public class PaymentRequest {
     private Long bookingId;
     private double amount;
     private String method;
+
+    public void setMethod(String credit_Card) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setAmount(double d) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

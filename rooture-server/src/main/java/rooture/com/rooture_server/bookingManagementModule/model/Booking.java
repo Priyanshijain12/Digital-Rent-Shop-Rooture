@@ -23,4 +23,28 @@ public class Booking {
     private LocalDate startDate;
     private LocalDate endDate;
     private String status;
+
+    public void setEndDate(LocalDate plusDays) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setStartDate(LocalDate now) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setId(long l) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public Object getStatus() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setStatus(String pending) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public long getId() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

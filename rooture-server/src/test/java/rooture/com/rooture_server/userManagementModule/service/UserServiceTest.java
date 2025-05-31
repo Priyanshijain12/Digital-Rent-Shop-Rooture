@@ -1,5 +1,6 @@
 package rooture.com.rooture_server.userManagementModule.service;
 
+
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTest {
 

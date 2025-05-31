@@ -18,4 +18,8 @@ public class PaymentDetails {
         this.date = date;
         this.method = method;
     }
+
+    public long getBookingId() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

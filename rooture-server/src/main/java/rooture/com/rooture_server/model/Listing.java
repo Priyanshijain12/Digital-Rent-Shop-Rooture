@@ -28,4 +28,12 @@ public class Listing {
     private double price;
     private boolean available;
     private String owner;
+
+    public Object getTitle() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public int getPrice() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 } 

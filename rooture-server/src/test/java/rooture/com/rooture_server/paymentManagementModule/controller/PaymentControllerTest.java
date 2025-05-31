@@ -1,5 +1,20 @@
 package rooture.com.rooture_server.paymentManagementModule.controller;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.mockito.ArgumentMatchers.any;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import static org.mockito.Mockito.when;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import rooture.com.rooture_server.paymentManagementModule.model.PaymentDetails;
+import rooture.com.rooture_server.paymentManagementModule.model.PaymentRequest;
+import rooture.com.rooture_server.paymentManagementModule.service.PaymentService;
+
 @ExtendWith(MockitoExtension.class)
 public class PaymentControllerTest {
 
@@ -11,7 +26,8 @@ public class PaymentControllerTest {
 
     @Test
     void testProcessPayment_ValidRequest_ReturnsSuccessMessage() {
-        PaymentRequest request = new PaymentRequest();
+        PaymentRequest request;
+        request = new PaymentRequest();
         request.setAmount(100.0);
         request.setMethod("Credit Card");
 
